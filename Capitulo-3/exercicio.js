@@ -62,7 +62,7 @@ if (idade >= 18) {
 console.log("\nLaço For de 1 a 10");
 let liHTML = document.querySelector(".lista-nomes ul");
 
-for (i = 1; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
   liHTML.innerHTML += `<li>Laço For:  ${+i}</li>`;
 }
 
@@ -72,8 +72,8 @@ for (i = 1; i <= 10; i++) {
  */
 
 console.log("\nLaço While de 1 a 10");
-let n = 1;
-while (n <= 10) {
+let n = 10;
+while (n >= 1) {
   console.log("Laço While: " + n);
-  n++;
+  n--;
 }
