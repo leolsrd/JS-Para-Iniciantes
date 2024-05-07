@@ -53,3 +53,24 @@ getImg.setAttribute("src", "./img/caramelo.jpeg");
 // ? que poderiam se beneficiar de estilização, como um título, um parágrafo
 // ? de texto e um bloco de conteúdo.No seu arquivo JavaScript, altere o
 // ? estilo desses elementos usando style.
+
+getH1.style.fontSize = "2.5em";
+getH1.style.color = "#2b2cf0";
+getImg.style.border = "4px solid #703A0A";
+// getImg.onmouseover.style.border = "4px solid #ffffff";
+addEventListener("mouseover", (event) => {
+  getImg.style.border = "4px solid #ffffff";
+});
+addEventListener("mouseout", (event) => {
+  getImg.style.border = "4px solid #703A0A";
+});
+getImg.style.borderRadius = "4px";
+document.body.style.background = "#f0f0f0";
+
+// ? Exercício 6
+// ? Trabalhando com Eventos Adicione um botão ao seu arquivo HTML.
+// ? No seu arquivo JavaScript, adicione um manipulador de eventos a este
+// ? botão que muda o estilo de um elemento diferente quando o botão é clicado.
+
+let button = document.getElementsByClassName("alterarCor");
+console.log(button[0]);

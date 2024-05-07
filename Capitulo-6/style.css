@@ -6,3 +6,21 @@ img {
   width: auto;
   height: auto;
 }
+
+.changeColor {
+  margin: 40px 0;
+}
+
+.changeColor h2 {
+  font-size: 2.25em;
+  color: rgb(223, 22, 22);
+}
+
+.alterarCor {
+  padding: 10px 16px;
+  text-transform: uppercase;
+  background: rgb(98, 67, 225);
+  color: white;
+  border: 4px solid #343434;
+  font-size: 1em;
+}
