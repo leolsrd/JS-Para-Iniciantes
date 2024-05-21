@@ -12,7 +12,7 @@ button.addEventListener("click", function () {
 });
 
 input.addEventListener("change", function () {
-  console.log("O valor do input foi alterado:  " + this.value);
+  console.log("O valor digitado no input:  " + this.value);
 });
 
 form.addEventListener("submit", function (event) {
