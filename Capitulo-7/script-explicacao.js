@@ -4,7 +4,7 @@ let campoNome = document.getElementById("nome");
 let nomeAtual = campoNome.value;
 
 // ? Define um novo valor para o campo
-campoNome.value = "Novo Nome";
+// campoNome.value = "Novo Nome";
 
 let campoCheckbox = document.getElementById("meuCheckbox");
 
@@ -35,3 +35,19 @@ function meuSelect() {
   console.log(`Valor selecionado: ${campoSelect.value}`);
   console.log(`Indice selecionado: ${campoSelect.selectedIndex}`);
 }
+
+// ? Quando o formulário for submetido, executa a função de validação
+document
+  .getElementById("meuFormulario")
+  .addEventListener("submit", function (event) {
+    // ? Previne o comportamento padrão de submissão do formulário
+    event.preventDefault();
+
+    // ? Verifica se o campo de nome está vazio
+    if (campoNome.value === "") {
+      alert("Por favor, insira seu nome.");
+      return false;
+    } else {
+      alert("Formulário submetido com sucesso!");
+    }
+  });
